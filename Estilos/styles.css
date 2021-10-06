@@ -1,0 +1,231 @@
+    @charset "UTF-8";
+
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    :root {
+        --cor0: #EEEEEE;
+        --cor1: #64b6e6b9;
+        --cor2: #00ADB5;
+        --cor3: #393E46;
+        --cor4: #05009970;
+        --cor5: #77ACF1;
+        --cor6: #3EDBF0;
+        --cor7: #C0FEFC;
+        --cor8: #D4ECDD;
+        --cor9: #150050;
+        --cor10: #1500508e;
+
+        --fonte-padron: Arial, Verdana, Halvetica, sans-serif;
+        --fonte-titulo: 'Rubik', sans-serif;
+        --fonte-paragrafo: 'Roboto Condensed', sans-serif;
+    }
+
+    body {
+        background-color: var(--cor1);
+        font-family: var(--fonte-padron);
+
+    }
+
+    header {
+        background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+        min-height: 150px;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    header > h1 {
+        color: var(--cor0);
+        font-family: var(--fonte-titulo);
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+
+    header > p {
+        color: var(--cor0);
+        font-size: 1.5rem;
+        font-family: var(--fonte-paragrafo);
+        max-width: 500px;
+        margin: auto;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    nav {
+        background-color: #0500997c;
+        padding: 10px;
+        text-align: center;
+        font-family: var(--fonte-titulo);
+        
+    }
+
+    .aff {
+        list-style-position: inside;
+        list-style-type: none;
+        display: inline-flex;
+    }
+
+    .aff > li {
+        display: inline;
+    }
+
+    .aff > li > a {
+        color: var(--cor0);
+        padding: 10px;
+    }
+
+    .aff > li > a:hover {
+        background-color: var(--cor5);
+        border-radius: 10px;
+        transition-duration: 1s;
+    }
+
+    main {
+        background-color: var(--cor3);
+        min-width: 300px;
+        max-width: 1000px;
+        margin-bottom: 30px;
+        padding: 20px;
+        margin: auto;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.445);
+        border-radius:  0px 0px 10px 10px;
+    }
+
+    main  h1 {
+        color: var(--cor9);
+        font-family: var(--fonte-titulo);
+        text-align: center;
+        background-color: var(--cor5);
+
+    }
+
+    main  h2 {
+        color: var(--cor10);
+        font-family: var(--fonte-titulo);
+        font-size: 1.3em;
+        background-image: linear-gradient(to right, var(--cor1), transparent);
+
+    }
+    
+    main  p {
+        color: var(--cor0);
+        margin: 15px 0px;
+        font-family: var(--fonte-paragrafo);
+        font-size: 18px;
+        text-align: justify;
+        text-indent: 30px;
+        line-height: 2em;
+    }
+
+    main strong {
+        color: var(--cor6);
+        font-weight: bold;
+    }
+
+    main a {
+        color: var(--cor5);
+        padding: 2px 3px;
+    }
+
+    main a:hover {
+        background-color: var(--cor9);
+        border-radius: 5px;
+        transition-duration: 1s;
+        text-decoration: underline var(--cor5);
+        color: var(--cor0);
+    }
+
+    main a:active {
+        color: var(--cor2);
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    aside {
+        background-color: var(--cor4);
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.192);
+    }
+
+    aside > h3 {
+        background-color: var(--cor9);
+        color: var(--cor0);
+        padding: 10px;
+        margin: -10px -10px 0px -10px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    aside > ul {
+        list-style-type: '\2714\00A0\00A0';
+        list-style-position: inside;
+        columns: 2;
+        color: var(--cor7);
+
+    }
+
+    footer {
+        background-color: var(--cor4);
+        color: var(--cor10);
+        text-align: center;
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    footer a {
+        color: var(--cor10);
+    }
+
+    footer a:hover {
+        background-color: var(--cor8);
+        transition-duration: 1s;
+        color: var(--cor3);
+        text-decoration: underline --cor3;
+    }
+    
+    a {
+        text-decoration: none;
+
+    }
+
+    a.externo::after {
+        content: '\1F4CE';
+    }
+
+    abbr {
+        text-decoration: none;
+    }
+
+    .pequena {
+        max-width: 300px;
+        display: block;
+        margin: auto;
+    }
+
+    .video {
+        background-color: var(--cor7);
+        margin: 0px -20px 30px -20px;
+        padding: 20px;
+        padding-bottom: 50%;
+        position: relative;
+    }
+
+    .video > iframe {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
